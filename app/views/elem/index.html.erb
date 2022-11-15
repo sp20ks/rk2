@@ -6,7 +6,7 @@
 
   <%= form_tag('/elem/result.json', :method => "get", remote:true, id:'form', class: 'form-control', style: 'width: 60%;') do %>
     <%= label_tag("Введите массив") %>
-    <%= text_field_tag :arr, "1 2 3 4" , class: 'form-control', id: 'arr' %> <br/>
+    <%= text_field_tag :arr, "1 2 3 -1 4" , class: 'form-control', id: 'arr' %> <br/>
     <%= submit_tag("calculate", class: 'btn btn-primary', id: 'btn') %>
   <% end %>
     <div id = 'res'></div>
